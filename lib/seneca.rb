@@ -1,5 +1,11 @@
 require "seneca/version"
 
 module Seneca
-  # Your code goes here...
+  class application
+    def call(env)
+      run proc {
+        [200, {'Content-type' => 'text/html'}, ["This is working!! Seneca is awesome :) - Ruby"]]
+      }
+    end
+  end
 end

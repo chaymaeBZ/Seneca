@@ -3,4 +3,4 @@ language: ruby
 rvm:
   - 2.3.0
 before_install: gem install bundler -v 1.14.6
-script: gem build seneca.gemspec 
+script: bundle exec rake build

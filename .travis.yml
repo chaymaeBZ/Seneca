@@ -4,5 +4,4 @@ rvm:
   - 2.3.0
 
 before_install: gem install bundler -v 1.14.6
-
-install: gem install seneca-0.1.0.gem
+install: gem build seneca.gemspec

@@ -4,4 +4,4 @@ rvm:
   - 2.3.0
 
 before_install: gem install bundler -v 1.14.6
-install: bundle exec rake build
+script: bundle exec rake build

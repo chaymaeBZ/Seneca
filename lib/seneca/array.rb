@@ -10,7 +10,7 @@ class Array
   end
 
 
-  def max
+  def max_occurences
     max_by do |x|
       frequences[x]
     end

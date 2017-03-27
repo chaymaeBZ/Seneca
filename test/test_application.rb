@@ -19,4 +19,13 @@ class SenecaTestApp < Test::Unit::TestCase
 
   end
 
+  def test_post
+    post "/"
+
+    assert last_response.ok?
+    body = last_response.body
+    assert body["Seneca is awesome "]
+  end
+
+
 end

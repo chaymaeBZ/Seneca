@@ -1,5 +1,5 @@
 
-# Seneca [![Build Status](https://travis-ci.org/travis-ci/travis-web.svg?branch=master)](https://travis-ci.org/travis-ci/travis-web)
+# Seneca [![Build Status](https://travis-ci.org/chaymaeBZ/Seneca.svg?branch=master)](https://travis-ci.org/chaymaeBZ/Seneca)
 
 Welcome,
  This is a Ruby On Rails like framework !

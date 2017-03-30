@@ -9,9 +9,11 @@ module Seneca
         return [404, { 'Content-type' => 'text/html' }, []]
       elsif env['PATH_INFO'] == '/'
        # env['PATH_INFO'] = '/quotes/day_quote'
-       file = File.open("./public/index.html", "rb")
+       path = File.expand_path "public/index.html"
+       file = File.open(path, "rb")
        text = file.read
        file.close
+       code = 200
      else
         klass, action = get_controller_and_action(env)
         controller = klass.new(env)

@@ -8,12 +8,17 @@ module Seneca
       if env['PATH_INFO'] == '/favicon.ico'
         return [404, { 'Content-type' => 'text/html' }, []]
       elsif env['PATH_INFO'] == '/'
+       ##
        # env['PATH_INFO'] = '/quotes/day_quote'
-       path = File.expand_path "public/index.html"
-       file = File.open(path, "rb")
-       text = file.read
-       file.close
-       code = 200
+       ##
+       # path = File.expand_path "public/index.html"
+       # file = File.open(path, "rb")
+       # text = file.read
+       # file.close
+       # code = 200
+       ##
+
+       return [301, {'location' => 'localhost:3001/quotes/day_quote'}, []]
      else
         klass, action = get_controller_and_action(env)
         controller = klass.new(env)

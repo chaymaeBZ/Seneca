@@ -17,8 +17,7 @@ module Seneca
        # file.close
        # code = 200
        ##
-
-       return [301, {'location' => 'localhost:3001/quotes/day_quote'}, []]
+       return [301, {'location' => 'http://localhost:3001/quotes/day_quote'}, []]
      else
         klass, action = get_controller_and_action(env)
         controller = klass.new(env)

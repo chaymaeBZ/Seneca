@@ -1,6 +1,8 @@
 require "seneca/version"
 require "seneca/array"
 require "seneca/routing"
+require "seneca/util"
+require "seneca/dependencies"
 
 module Seneca
   class Application
